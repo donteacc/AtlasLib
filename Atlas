@@ -699,6 +699,15 @@ do
                 Parent = ContextMenu.Inner,
             });
 
+            Library:Create('UIPadding', {
+                Name = 'TabPadding',
+                PaddingTop = UDim.new(0, 5),     -- Adjust values as needed
+                PaddingBottom = UDim.new(0, 5),
+                PaddingLeft = UDim.new(0, 5),
+                PaddingRight = UDim.new(0, 5),
+                Parent = TabContainer,           -- Replace `TabContainer` with the actual name of your tabs container
+            });            
+
             local function updateMenuPosition()
                 ContextMenu.Container.Position = UDim2.fromOffset(
                     (DisplayFrame.AbsolutePosition.X + DisplayFrame.AbsoluteSize.X) + 4,
