@@ -519,7 +519,7 @@ do
             Size = UDim2.new(0, 6, 0, 6);
             BackgroundTransparency = 1;
             Image = 'http://www.roblox.com/asset/?id=9619665977';
-            ImageColor3 = Color3.new(0, 0, 0);
+            ImageColor3 = Color3.new(1, 1, 1);
             ZIndex = 19;
             Parent = SatVibMap;
         });
@@ -2944,7 +2944,7 @@ function Library:CreateWindow(...)
     end
 
     if type(Config.Title) ~= 'string' then Config.Title = 'No title' end
-    if type(Config.TabPadding) ~= 'number' then Config.TabPadding = 2 end
+    if type(Config.TabPadding) ~= 'number' then Config.TabPadding = 0 end
     if type(Config.MenuFadeTime) ~= 'number' then Config.MenuFadeTime = 0.4 end
 
     if typeof(Config.Position) ~= 'UDim2' then Config.Position = UDim2.fromOffset(175, 50) end
